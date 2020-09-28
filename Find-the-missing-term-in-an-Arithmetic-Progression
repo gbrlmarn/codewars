@@ -1,0 +1,10 @@
+def find_missing(sequence):
+    c=sequence[0]
+    p=(sequence[-1]-sequence[0])/(len(sequence))
+    sequence2=[]
+    for i in sequence:
+        if c!=i:
+            sequence2.append(c)
+            c+=p
+        c+=p
+    return(int(sequence2[0]))
